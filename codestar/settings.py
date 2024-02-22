@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY='M3Hgaci5ov'
+SECRET_KEY=os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG=False
+DEBUG=True
 
 ALLOWED_HOSTS = ['8000-nicolelir-djangoblog-h2vur9sk729.ws-eu108.gitpod.io','.herokuapp.com']
 
@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get("postgres://jjmgkggm:KMm-LEj4xD-vCQJn39VXfPx8xU-okabe@trumpet.db.elephantsql.com/jjmgkggm"))
+        default=os.environ.get("DATABASE_URL"))
 }
 
 
