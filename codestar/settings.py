@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog'
+
 ]
 
 MIDDLEWARE = [
@@ -90,12 +91,11 @@ DATABASES = {
         default=os.environ.get("postgres://jjmgkggm:KMm-LEj4xD-vCQJn39VXfPx8xU-okabe@trumpet.db.elephantsql.com/jjmgkggm"))
 }
 
+CRS_Trusted_origins = ["https://8000-nicolelir-djangoblog-h2vur9sk729.ws-eu108.gitpod.io"]
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com",
     "https://8000-nicolelir-djangoblog-h2vur9sk729.ws-eu108.gitpod.io"
-    
-
 ]
 
 # Password validation
