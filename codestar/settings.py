@@ -29,7 +29,7 @@ SECRET_KEY='M3Hgaci5ov'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG=False
 
-ALLOWED_HOSTS = ['8000-nicolelir-djangoblog-pvkcmwel13p.ws-eu108.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-nicolelir-djangoblog-h2vur9sk729.ws-eu108.gitpod.io','.herokuapp.com']
 
 
 # Application definition
@@ -89,6 +89,13 @@ DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get("postgres://jjmgkggm:KMm-LEj4xD-vCQJn39VXfPx8xU-okabe@trumpet.db.elephantsql.com/jjmgkggm"))
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeanyapp.com",
+    "https://*.herokuapp.com",
+    "https://8000-nicolelir-djangoblog-h2vur9sk729.ws-eu108.gitpod.io"
+
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
