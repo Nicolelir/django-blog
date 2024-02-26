@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 text-center">
+            <img src="{% static 'images/nobody..jpg' %}" width="75%">
+        </div>
+        <div class="col-8">
+            <h2>About Nicole</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur maxime velit explicabo sit labore fugit exercitationem quas adipisci nobis quia vel quaerat, suscipit obcaecati perferendis omnis possimus. Perferendis, odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error reprehenderit nostrum sint libero placeat suscipit, quasi dolorem soluta quos molestias ratione voluptate, ipsum tenetur alias fugit veritatis, magni accusantium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur maxime velit explicabo sit labore fugit exercitationem quas adipisci nobis quia vel quaerat, suscipit obcaecati perferendis omnis possimus. Perferendis, odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error reprehenderit nostrum sint libero placeat suscipit, quasi dolorem soluta quos molestias ratione voluptate, ipsum tenetur alias fugit veritatis, magni accusantium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur maxime velit explicabo sit labore fugit exercitationem quas adipisci nobis quia vel quaerat, suscipit obcaecati perferendis omnis possimus. Perferendis, odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error reprehenderit nostrum sint libero placeat suscipit, quasi dolorem soluta quos molestias ratione voluptate, ipsum tenetur alias fugit veritatis, magni accusantium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur maxime velit explicabo sit labore fugit exercitationem quas adipisci nobis quia vel quaerat, suscipit obcaecati perferendis omnis possimus. Perferendis, odio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error reprehenderit nostrum sint libero placeat suscipit, quasi dolorem soluta quos molestias ratione voluptate, ipsum tenetur alias fugit veritatis, magni accusantium?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-right">
+          <!-- Updated on field goes in here -->
+    
+          <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+        </div>
+      </div>    
+</div>
+
+{% endblock content %}
+{% block copyright %}Copyright 2024 Nicole Rojas{% endblock %}
