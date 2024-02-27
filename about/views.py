@@ -18,3 +18,4 @@ def about_me(request):
         "about/about.html",
         {"about": about, "collaborate_form": collaborate_form},
     )
+
